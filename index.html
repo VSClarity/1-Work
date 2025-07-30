@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <style>
+        body {
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serifs;
+            line-height: 1.5;
+        }
+        img {
+            height: 350px;
+            display:block;
+            margin: 25px ;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+        a:hover {
+            color: red;
+            text-decoration: underline red;
+        }
+        button{
+            color: white;
+            background-color: green;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: lightgray;
+        }
+    </style>
+    </script>
+</head>
+<body>
+
+    <a 
+    href="https://rozetka.com.ua/mobile-phones/c80003/producer=samsung/">
+    Мобільні телефони Samsung
+    </a>
+
+    <h1>
+        Vove S24 Ultra Dual SIM Phone 6.74 Экран 12 ГБ + 512 ГБ
+    </h1>
+    
+    <img
+        src="https://content1.rozetka.com.ua/goods/images/big/521243513.jpg"
+        alt="Vove S24 Ultra Dual SIM Phone">
+
+    <span>★★★★★</span>
+
+    <a 
+        href="https://rozetka.com.ua/472351229/p472351229/comments/">
+        Переглянути всі відгуки
+    </a>
+    
+    <p>
+        Пам'ять: 12GB+512GB
+        Чип материнської плати: Helio G99
+        Камера: 8MP+18MP
+        Розмір екрану: 6.74
+        Кількість ядер: Octa-Core
+        Версія Android: 13
+        Роздільна здатність: 2712×1220
+        Батарея: 5000
+        Bluetooth: 5.3
+        Основна частота: 3.36GHz
+        Зарядний пристрій: Європейський стандарт
+        Продукт: Висока якість виготовлення, гарний дизайн
+    </p>
+
+    <button>Дізнатись ціну</button>
+ 
+    <script>
+        
+        const PriceButton = document.querySelector('button');
+
+        PriceButton.onclick = function(){ 
+            const price = 14000;
+            alert("Повна ціна за 1 товар " + price)
+
+            const amount = 2;
+            const totalPrice = price * amount * 0.9;
+            alert("Повна ціна за 2 товари враховуючи знижку " + totalPrice)
+        }
+        
+        const star = document.querySelector('span');
+        star.onclick = function(){
+            star.style.color = 'purple';
+            alert('Ваш голос враховано');
+        }
+
+        const phoneImg = document.querySelector('img');
+        phoneImg.onmouseover = function(){
+            phoneImg.src = "https://content2.rozetka.com.ua/goods/images/big/521243571.jpg"
+        }
+
+        phoneImg.onmouseout = function(){
+            phoneImg.src = "https://content1.rozetka.com.ua/goods/images/big/521243513.jpg"
+        }
+    </script>
+</body>
+</html>
